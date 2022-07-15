@@ -1,0 +1,357 @@
+*{
+    font-family: 'Roboto Flex', sans-serif;
+}
+body{
+    margin: 0;
+    box-sizing: content-box;
+}
+header{
+    width: 100%;
+    
+    background: black;
+}
+#acordeon .btn-menu:hover .header-before{
+    display: none;
+}
+.header-before{
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    padding-top: 1.3em;
+    display: none;
+}
+.row-header{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.row-header-two{
+    display: block;
+    margin-right: 4em;
+    margin-left: 150px;
+    line-height: 1.5em;
+    padding-left: 1em;
+}
+@media (max-width: 768px){
+    .row-header-two{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .row-header-one{
+        width: 100% !important;
+        
+    }
+    
+}
+
+#row-header-two li{
+    list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#row-header-two ul{
+    padding-left: 0;
+    width: max-content;
+}
+#row-header-two h4{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.row-header-one{
+    width: 50%;
+    
+}
+@media (min-width = 768px) {
+    
+    .row-header-one{
+        width: 100% !important;
+    }
+}
+
+#row-header-one h4{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+#row-header-one p{
+    opacity: 50%;
+}
+
+nav{
+    box-sizing: content-box;
+    margin-top: 0;
+    background-color: black;
+    opacity: 0.9;
+    align-items: center;
+    padding-left: 0px;
+    padding: 1em 0;
+    
+}
+.nav-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+.nav-img{
+    width: 30px;
+    padding-right: 0.4em;
+    
+}
+.nav-album{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 10px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.icono-album{
+    align-items: center;
+    box-sizing: content-box;
+    
+    display: flex;
+}
+
+    
+    
+
+
+.btn-menu{
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    padding-right: 1em;
+    font-size: 2em;
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,.1);
+    border-radius: 3px;
+}
+.main{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 6em 0;
+    background-color: #fff;
+}
+
+@media (max-width: 600px){
+    .main{
+        min-width: 95%;
+    }
+}
+@media (max-width: 990px){
+    .main{
+        padding: 4em 0;
+    }
+}
+@media (max-width: 200px){
+    .btn-menu{
+        padding-top: 0.2em;
+        
+    }
+}
+.main-text{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 2px;
+    font-family: 'Roboto Flex', sans-serif,100;
+    padding-bottom: 0.1em;
+    text-align: center;
+    line-height: 1.5em;
+    box-sizing: content-box;
+    opacity: 0.6;
+    margin: 0.5em auto;
+}
+
+.main-p{
+    font-size: calc(1.375rem + 1.5vw);
+    margin: 0 auto;
+    
+}
+.botones{
+    display: inline-block;
+}
+.btn-main{
+    background-color: #166ae7;
+    font-weight: 5px;
+    border-radius: 5px;
+    opacity: 95%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 0.7rem;
+    box-sizing: content-box;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 0.5em;
+}
+.btn-main:hover{
+    background-color: #125bc8;
+    transition: all 0.5s;
+}
+.btn-second{
+    background-color: rgb(85, 89, 92);
+    font-weight: 5px;
+    border-radius: 5px;
+    opacity: 95%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 0.7rem;
+    box-sizing: content-box;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0.5em;
+}
+.btn-second:hover{
+
+    background-color: #4a4a4a;
+    background-position: 0 100px;
+    transition: all 0.5s;
+}
+.card{
+    position: relative;
+    display: block;
+    width: 33.3333%;
+    box-sizing: border-box;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    
+}
+.card-main{
+    color:rgb(252, 252, 252);
+    background-color: rgb(85, 89, 92);
+    padding: 6em 0.5em;
+    text-align: center;
+    margin: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.card-second{
+    padding: 0.9em;
+    background-color: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%);
+}
+.card-text{
+    line-height: 1.4em;
+    margin: 0;
+    padding-bottom: 0.9em;
+    
+}
+.card-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-botones{
+    
+    position: relative;
+    display: inline-flex;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 0.1px solid #5f5e5e;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.card-options>div>button{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+#card-boton{
+    border-right: 0.1px solid #5f5e5e;
+    box-sizing: content-box;
+    padding: 0.6em;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container-cards{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 2em 0; 
+    margin: 0 auto;
+    background-color: rgb(247, 245, 245);
+    
+}
+@media (max-width: 850px) {
+    .card{
+        width: 50%;
+    }
+    .container-cards{
+        padding: 2em 0.1em;
+    }
+    .row{
+        margin: 0.3em;
+    }
+}
+@media (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+    .container-cards{
+        padding: 2em 0.1em;
+    }
+    .row{
+        margin: 0.3em;
+    }
+}
+
+
+.footer{
+    padding: 2em 0.5em;
+    line-height: 1.5em;
+}
+
+.footer-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    display: inline-block;
+    margin: 0;
+}
+.footer a{
+    color: #0d6efd;
+}
+    
