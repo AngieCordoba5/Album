@@ -281,11 +281,12 @@ nav{
     border-bottom-right-radius: 0;
     vertical-align: middle;
     background-color: #fff;
-    border: 0.1px solid #5f5e5e;
+    border: 0.1px solid #6c757d;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    transition: background-color 0.25s;
 }
 
 .card-options>div>button{
@@ -295,9 +296,14 @@ nav{
     box-sizing: content-box;
 }
 #card-boton{
-    border-right: 0.1px solid #5f5e5e;
+    border-right: 0.1px solid #6c757d;
     box-sizing: content-box;
     padding: 0.6em;
+}
+.card-botones button:hover{
+    background-color: #6c757d;
+    color: #fff;
+    transition: background-color 0.25s;
 }
 .row{
     display: flex;
